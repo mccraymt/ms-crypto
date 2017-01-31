@@ -1,0 +1,5 @@
+{
+  "gson_api_url": "https://carz.com/v1/",
+  "non_existing_env_test": "ENV[non_existing_env_test]",
+  "existing_env_test": "ENV[EXISTING_ENV_TEST]"
+}

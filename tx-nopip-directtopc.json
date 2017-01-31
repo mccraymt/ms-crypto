@@ -1,0 +1,198 @@
+{
+  "id": "",
+  "method": "CreateAccountAndQuote",
+  "jsonrpc": "2.0",
+  "params": [
+    {
+      "account": {
+        "badDebtsFlag": false,
+        "materialMisrep": false,
+        "address": {
+          "addressLine1": "1195 E Walnut St",
+          "city": "Houton",
+          "country": "US",
+          "county": "Harris",
+          "zipCode": "77018",
+          "state": "TX"
+        },
+        "contact": {
+          "dateOfBirth": "1975/05/05",
+          "firstName": "Tex",
+          "lastName": "Nopip02",
+          "primaryPhoneNumber": "804-565-2342",
+          "primaryPhoneNumberType": "home"
+        }
+      },
+      "canQuote": true,
+      "policy": {
+        "selectedCoverages": [
+          {
+            "code": "EISPABodilyInjuryCov",
+            "terms": [
+              {
+                "code": "PABodilyInjury",
+                "value": "50/100"
+              }
+            ]
+          },
+          {
+            "code": "EISPAPropertyDamageCov",
+            "terms": [
+              {
+                "code": "PAPropertyDamage",
+                "value": "25"
+              }
+            ]
+          },
+          {
+            "code": "PAUMBICov",
+            "terms": [
+              {
+                "code": "PAUMBI",
+                "value": "30/60"
+              }
+            ]
+          },
+          {
+            "code": "PAUMPDCov",
+            "terms": [
+              {
+                "code": "PAUMPDLimit",
+                "value": "25000"
+              }
+            ]
+          }
+        ],
+        "CurrentInjuryLimits": "",
+        "yearsAtResidenceMonth": "1",
+        "yearsAtResidenceYear": "2011",
+        "drivers": [
+          {
+            "ageFirstLicensed": 16,
+            "dateOfBirth": "1975/05/05",
+            "drivesAnyVehicles": false,
+            "ExternalID": "8becd20f-6dc5-4b16-21e6-fa95e1000002",
+            "firstName": "Tex",
+            "fr19": false,
+            "fr44": false,
+            "gender": "M",
+            "hasDriversSafetyCourse": false,
+            "hasGoodStudentDiscount": false,
+            "highestEducationLevel": "bachelors",
+            "isAuthorizedUser": false,
+            "isPolicyHolder": true,
+            "lastName": "Nopip02",
+            "licenseNumber": "t12345678",
+            "licenseState": "VA",
+            "licenseStatus": "valid",
+            "livesInHousehold": false,
+            "maritalStatus": "M",
+            "occupation": {
+              "OccupationId": 32,
+              "OccupationStatus": "ServeMilitary",
+              "ArmyRank": "E5",
+              "MilitaryBranch": "Army"
+            },
+            "ownsOwnVehicleAndInsurance": false,
+            "webPrimaryVehicleId": "913cd711-65dc-c8ce-fd71-1c4e0b000002",
+            "ratingStatus": "rated",
+            "relationshipToInsured": "applicant",
+            "sr22": false
+          },
+          {
+            "ageFirstLicensed": 16,
+            "dateOfBirth": "1980/02/03",
+            "drivesAnyVehicles": true,
+            "ExternalID": "361a24e8-1bc4-2b4a-e9e8-fd8f54000002",
+            "firstName": "Misses",
+            "fr19": false,
+            "fr44": false,
+            "gender": "F",
+            "hasDriversSafetyCourse": false,
+            "hasGoodStudentDiscount": false,
+            "highestEducationLevel": "bachelors",
+            "isAuthorizedUser": false,
+            "isPolicyHolder": false,
+            "lastName": "Nopip02",
+            "licenseNumber": "a23212345",
+            "licenseState": "VA",
+            "licenseStatus": "valid",
+            "livesInHousehold": false,
+            "maritalStatus": "M",
+            "occupation": {
+              "OccupationId": 59,
+              "OccupationStatus": "ServeMilitary",
+              "NavyRank": "E3",
+              "MilitaryBranch": "Navy"
+            },
+            "ownsOwnVehicleAndInsurance": false,
+            "webPrimaryVehicleId": "6d0b12a7-6b00-edf4-b69d-e6f1d8000002",
+            "ratingStatus": "rated",
+            "relationshipToInsured": "spouse",
+            "sr22": false
+          }
+        ],
+        "primaryEmail": "Nopip02@devnull.org",
+        "eSignatureDiscount": true,
+        "fcraNotice": false,
+        "hasAutoInsurance": "just_acquired_auto",
+        "hasMotorcycle": false,
+        "isQuoted": false,
+        "onlineDiscount": true,
+        "paidInFull": false,
+        "paperlessDiscount": true,
+        "residencyStatus": "home",
+        "sourceOfBusiness": "Internet",
+        "uniqueID": "9FP000002",
+        "v2Quote": true,
+        "vehicles": [
+          {
+            "antiTheft": false,
+            "currentOwner": false,
+            "EstimatedAnnualMileage": "6000_to_7999",
+            "existingDamage": false,
+            "ExternalID": "913cd711-65dc-c8ce-fd71-1c4e0b000002",
+            "ignoreVin": false,
+            "leasedLoanedOrTitledToOther": false,
+            "licenseState": "VA",
+            "make": "Acura",
+            "MakeId": 1,
+            "model": "MDX AWD",
+            "ModelId": 3356,
+            "webPrimaryDriverID": "8becd20f-6dc5-4b16-21e6-fa95e1000002",
+            "primaryUse": "commuting",
+            "PurchasedMonth": "1",
+            "PurchasedYear": "2013",
+            "ShortModelName": "MDX",
+            "vin": "2HNYD2H25CH505177",
+            "year": 2012,
+            "yearStyleID": 27609
+          },
+          {
+            "antiTheft": false,
+            "currentOwner": false,
+            "EstimatedAnnualMileage": "less_than_4000",
+            "existingDamage": false,
+            "ExternalID": "6d0b12a7-6b00-edf4-b69d-e6f1d8000002",
+            "ignoreVin": false,
+            "leasedLoanedOrTitledToOther": false,
+            "licenseState": "VA",
+            "make": "Toyota",
+            "MakeId": 62,
+            "model": "SIENNA SE",
+            "ModelId": 5536,
+            "webPrimaryDriverID": "361a24e8-1bc4-2b4a-e9e8-fd8f54000002",
+            "primaryUse": "commuting",
+            "PurchasedMonth": "1",
+            "PurchasedYear": "2013",
+            "ShortModelName": "SIENNA",
+            "vin": "5TDKK3DC7BS011649",
+            "year": 2011,
+            "yearStyleID": 27525
+          }
+        ],
+        "webToPhoneDiscount": false
+      }
+    }
+  ]
+}

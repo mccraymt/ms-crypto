@@ -1,0 +1,29 @@
+[Unit]
+Description=Webhook
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple # fork, oneshot
+
+WorkingDirectory=/root/go/ms-crypto/src/github.com/mccraymt/ms-crypto/
+ExecStart=/root/go/ms-crypto/src/github.com/mccraymt/ms-crypto/ms-crypto
+Restart=on-failure
+
+# TODO: figure out how to get the below to work (w/ non-root user)
+# User=elephant-ms-web-user
+# WorkingDirectory=/opt/ms-crypto/
+# ExecStart=/opt/ms-crypto/ms-crypto
+
+# environment variables
+# NOTE: run on port 80 due to internal web lb and presumable firewall port (would like to use port 4000)
+Environment="GSON_API_URL_MS_QUOTE_INTENT=https://ms-crypto.elephant.com"
+Environment="PORT_MS_QUOTE_INTENT=80"
+Environment="NEW_RELIC_KEY_MS_QUOTE_INTENT=373b1a8505572ca7014b302dd72d8710fba4e17a"
+Environment="ENVIRONMENT_MS_QUOTE_INTENT=prod"
+Environment="PREFIX_TABLE_NAME_MS_QUOTE_INTENT=true"
+Environment="SSL_CERT_SIMPLE_HTTP_TEXT= "
+Environment="DEBUG_MS_QUOTE_INTENT=false"
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,151 @@
+{
+  "version":                   "1.0.0",
+	"gson_api_url":              "ENV[GSON_API_URL_MS_CRYPTO]",
+	"port":                      "ENV[PORT_MS_CRYPTO]",
+	"new_relic_key":             "ENV[NEW_RELIC_KEY_MS_CRYPTO]",
+	"loggly_key":                "8a68c5ea-5df2-498f-b006-c63eb4ec161f",
+	"environment":               "ENV[ENVIRONMENT_MS_CRYPTO]",
+	"ssl_cert_simple_http_text": "ENV[SSL_CERT_SIMPLE_HTTP_TEXT]",
+	"debug":                     "ENV[DEBUG_MS_CRYPTO]",
+  "dev": {
+    "couchbase": {
+      "aws": {
+        "cluster_address": "ec2-52-90-99-95.compute-1.amazonaws.com",
+      	"bucket_name":     "client-portal",
+      	"bucket_password": "elephant"
+      }
+    },
+    "policy_center": {
+      "edge_services_address": "http://pc-qa2.qa-elephant.com/pc/service/",
+      "edge_services_user": "su",
+      "edge_services_password": "gw"
+    },
+    "influx_db": {
+      "host": "ec2-52-90-45-8.compute-1.amazonaws.com",
+      "db_name": "multi_journey",
+      "username": "webquote",
+      "password": "D2#4g!L"
+    },
+    "ancillary_api_root": "https://eaa-ci.qa-elephant.com"
+  },
+  "test": {
+    "couchbase": {
+      "aws": {
+        "cluster_address": "ec2-52-90-99-95.compute-1.amazonaws.com",
+      	"bucket_name":     "quote-intents",
+      	"bucket_password": "elephant"
+      }
+    },
+    "policy_center": {
+      "edge_services_address": "http://pc-qa2.qa-elephant.com/pc/service/",
+      "edge_services_user": "su",
+      "edge_services_password": "gw"
+    },
+    "ancillary_api_root": "https://eaa-ci.qa-elephant.com"
+  },
+  "ci": {
+    "couchbase": {
+      "aws": {
+        "cluster_address": "ec2-52-90-99-95.compute-1.amazonaws.com",
+      	"bucket_name":     "quote-intents",
+      	"bucket_password": "elephant"
+      }
+    },
+    "policy_center": {
+      "edge_services_address": "http://pc-qa2.qa-elephant.com/pc/service/",
+      "edge_services_user": "su",
+      "edge_services_password": "gw"
+    },
+    "influx_db": {
+      "host": "ec2-52-90-45-8.compute-1.amazonaws.com",
+      "db_name": "multi_journey",
+      "username": "webquote",
+      "password": "D2#4g!L"
+    },
+    "ancillary_api_root": "https://eaa-ci.qa-elephant.com"
+  },
+  "qa1": {
+    "couchbase": {
+      "aws": {
+        "cluster_address": "ec2-52-90-99-95.compute-1.amazonaws.com",
+        "bucket_name":     "quote-intents",
+        "bucket_password": "elephant"
+      }
+    },
+    "policy_center": {
+      "edge_services_address": "http://pc-qa2.qa-elephant.com/pc/service/",
+      "edge_services_user": "su",
+      "edge_services_password": "gw"
+    },
+    "influx_db": {
+      "host": "ec2-52-90-45-8.compute-1.amazonaws.com",
+      "db_name": "multi_journey",
+      "username": "webquote",
+      "password": "D2#4g!L"
+    },
+    "ancillary_api_root": "https://eaa-qa1.qa-elephant.com"
+  },
+  "qa2": {
+    "couchbase": {
+      "aws": {
+        "cluster_address": "ec2-52-90-99-95.compute-1.amazonaws.com",
+        "bucket_name":     "quote-intents",
+        "bucket_password": "elephant"
+      }
+    },
+    "policy_center": {
+      "edge_services_address": "http://10.2.25.55:8080/pc/service/",
+      "edge_services_user": "su",
+      "edge_services_password": "gw"
+    },
+    "influx_db": {
+      "host": "ec2-52-90-45-8.compute-1.amazonaws.com",
+      "db_name": "multi_journey",
+      "username": "webquote",
+      "password": "D2#4g!L"
+    },
+    "ancillary_api_root": "https://eaa-qa2.qa-elephant.com"
+  },
+  "partner-test": {
+    "couchbase": {
+      "aws": {
+        "cluster_address": "ec2-52-90-99-95.compute-1.amazonaws.com",
+        "bucket_name":     "quote-intents",
+        "bucket_password": "elephant"
+      }
+    },
+    "policy_center": {
+      "edge_services_address": "http://10.1.3.100:8080/pc/service/",
+      "edge_services_user": "su",
+      "edge_services_password": "gw"
+    },
+    "influx_db": {
+      "host": "ec2-52-90-45-8.compute-1.amazonaws.com",
+      "db_name": "multi_journey",
+      "username": "webquote",
+      "password": "D2#4g!L"
+    },
+    "ancillary_api_root": "https://eaa-partner-test.qa-elephant.com"
+  },
+  "prod": {
+    "couchbase": {
+      "aws": {
+        "cluster_address": "vaprd-cb-01.admiral.local,vaprd-cb-02.admiral.local,vaprd-cb-03.admiral.local",
+        "bucket_name":     "quote-intents",
+        "bucket_password": ""
+      }
+    },
+    "policy_center": {
+      "edge_services_address": "http://web-policycenter/pc/service/",
+      "edge_services_user": "delete-me",
+      "edge_services_password": "delete-me"
+    },
+    "influx_db": {
+      "host": "ec2-52-90-45-8.compute-1.amazonaws.com",
+      "db_name": "multi_journey",
+      "username": "webquote",
+      "password": "D2#4g!L"
+    },
+    "ancillary_api_root": "https://eaa.elephant.com"
+  }
+}

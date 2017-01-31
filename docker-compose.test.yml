@@ -1,0 +1,14 @@
+sut:
+  build: .
+  command: bash -c "echo"
+  environment:
+    - DEBUG_MS_QUOTE_INTENT=true
+    - ENV=ci
+    - ENVIRONMENT_MS_QUOTE_INTENT=ci
+    - 'GSON_API_URL_MS_QUOTE_INTENT=https://ms-crypto-ci.qa-elephant.com'
+    - MARTINI_ENV=production
+    - 'NEW_RELIC_KEY_MS_QUOTE_INTENT= '
+    - PORT_MS_QUOTE_INTENT=4000
+    - PREFIX_TABLE_NAME_MS_QUOTE_INTENT=true
+    - SSL_CERT_SIMPLE_HTTP_TEXT=NA
+    - 'VIRTUAL_HOST=http://ms-crypto-ci.qa-elephant.com, https://ms-crypto-ci.qa-elephant.com'
