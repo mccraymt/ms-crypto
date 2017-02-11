@@ -1,3 +1,15 @@
+
+  gocode
+  gopkgs
+  go-outline
+  go-symbols
+  guru
+  gorename
+  godef
+  goreturns
+  golint
+  gotests
+
 ## ms-crypto
 crypto microservice
 

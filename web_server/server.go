@@ -15,21 +15,21 @@ import (
 	"net/http/httputil"
 	"strings"
 
-	"github.com/mccraymt/ms-crypto/app/routes"
-	"github.com/mccraymt/ms-crypto/app/utils"
-	cfg "github.com/mccraymt/ms-crypto/config"
 	"github.com/go-martini/martini"
 	"github.com/martini-contrib/cors"
 	"github.com/martini-contrib/gorelic"
 	"github.com/martini-contrib/gzip"
 	"github.com/martini-contrib/render"
+	"github.com/mccraymt/ms-crypto/app/routes"
+	"github.com/mccraymt/ms-crypto/app/utils"
+	cfg "github.com/mccraymt/ms-crypto/config"
 	gapi "github.com/obieq/gson-api"
 	"github.com/twinj/uuid"
 )
 
 // API_SERVER_INFO => used to construct relationship urls in responses
 //                    should pull values from config settings
-var API_SERVER_INFO = gapi.JSONApiServerInfo{BaseURL: "http://quote-intents-ms.mccraymt.com", Prefix: "v1"}
+var API_SERVER_INFO = gapi.JSONApiServerInfo{BaseURL: "http://crypto-ms.mccraymt.com", Prefix: "v1"}
 
 // NewServer => Constructor
 func NewServer() *martini.ClassicMartini {
@@ -108,6 +108,10 @@ func NewServer() *martini.ClassicMartini {
 	//                       requirements when calling APIs via javascript
 	m.Get("/proxy.html", func() string {
 		return `<!doctype html><script src="https://d1pvkh5g3u3d4w.cloudfront.net/xdomain.js" data-master="*"></script>`
+	})
+
+	m.Get("/hello", func() string {
+		return "hello world" // HTTP 200 : "hello world"
 	})
 
 	// Controller Routes
